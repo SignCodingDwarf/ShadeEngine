@@ -24,11 +24,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        main.cpp
+        main.cpp \
+        src/Graphics/AbstractShadeWidget.cpp
 
-HEADERS +=
-
-FORMS +=
+HEADERS += \
+        include/Graphics/AbstractShadeWidget.h
 
 LIBS += -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-window -lsfml-system
 
