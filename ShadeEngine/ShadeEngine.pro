@@ -29,3 +29,6 @@ SOURCES += \
 HEADERS +=
 
 FORMS +=
+
+LIBS += -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-window -lsfml-system
+
