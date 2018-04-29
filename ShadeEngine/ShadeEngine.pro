@@ -26,11 +26,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         src/Graphics/AbstractShadeWidget.cpp \
-    src/Test/TestShadeWidget.cpp
+    src/Test/TestShadeWidget.cpp \
+    src/Characters/AbstractRPGCharacter.cpp
 
 HEADERS += \
         include/Graphics/AbstractShadeWidget.h \
-    include/Test/TestShadeWidget.h
+    include/Test/TestShadeWidget.h \
+    include/Characters/AbstractRPGCharacter.h
 
 LIBS += -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-window -lsfml-system
 
