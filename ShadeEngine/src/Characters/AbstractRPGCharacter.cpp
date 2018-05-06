@@ -2,11 +2,12 @@
  * @file AbstractRPGCharacter.cpp
  * @brief Interface of classes used to describe a RPG character.
  * @author SignC0dingDw@rf
- * @date 29 April 2018
+ * @date 06 May 2018
  *
  * Implementation of RPG-like characters that can earn experience and level up. Optionnally they can also lose experience and level down. <br>
  * The class proposes a default behavior for XP win or loss that implies that character can go several levels up or down. You may overload these methods to enforce different behavior. <br>
- * Abstract class.
+ * Abstract class. <br>
+ * Inherits from QObject
  *
  */
 
@@ -68,7 +69,7 @@ If not, see <http://www.dwarfvesaregonnabeatyoutodeath.com>.
 
 namespace ShadeEngine
 {
-    AbstractRPGCharacter::AbstractRPGCharacter(uint8_t level_max, bool can_level_down) : m_level(1), m_level_max(level_max),
+    AbstractRPGCharacter::AbstractRPGCharacter(uint8_t level_max, bool can_level_down) : QObject(), m_level(1), m_level_max(level_max),
         m_can_level_down(can_level_down), m_xp(0)
     {
     }

@@ -2,11 +2,12 @@
  * @file AbstractRPGCharacter.h
  * @brief Interface of classes used to describe a RPG character.
  * @author SignC0dingDw@rf
- * @date 29 April 2018
+ * @date 06 May 2018
  *
  * Definition of RPG-like characters that can earn experience and level up. Optionnally they can also lose experience and level down. <br>
  * The class proposes a default behavior for XP win or loss that implies that character can go several levels up or down. You may overload these methods to enforce different behavior. <br>
- * Abstract class.
+ * Abstract class. <br>
+ * Inherits from QObject
  *
  */
 
@@ -69,6 +70,7 @@ If not, see <http://www.dwarfvesaregonnabeatyoutodeath.com>.
 #define ABSTRACT_RPG_CHARACTER_H
 
 #include <stdint.h>
+#include <QObject>
 
 /*!
 * @namespace ShadeEngine
@@ -83,8 +85,9 @@ namespace ShadeEngine
     * Abstract class.
     *
     */
-    class AbstractRPGCharacter
+    class AbstractRPGCharacter : public QObject
     {
+        Q_OBJECT
     public:
         /*!
         * @brief Constructor of the AbstractRPGCharacter class
