@@ -27,12 +27,16 @@ SOURCES += \
         main.cpp \
         src/Graphics/AbstractShadeWidget.cpp \
     src/Test/TestShadeWidget.cpp \
-    src/Characters/AbstractRPGCharacter.cpp
+    src/Characters/AbstractRPGCharacter.cpp \
+    src/Graphics/SpriteLayersWidget.cpp \
+    src/Test/CreateSpriteList.cpp
 
 HEADERS += \
         include/Graphics/AbstractShadeWidget.h \
     include/Test/TestShadeWidget.h \
-    include/Characters/AbstractRPGCharacter.h
+    include/Characters/AbstractRPGCharacter.h \
+    include/Graphics/SpriteLayersWidget.h \
+    include/Test/CreateSpriteList.h
 
 LIBS += -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-window -lsfml-system
 

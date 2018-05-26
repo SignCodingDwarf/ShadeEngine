@@ -66,8 +66,8 @@ If not, see <http://www.dwarfvesaregonnabeatyoutodeath.com>.
 */
 
 
-#ifndef SHADE_WIDGET_H
-#define SHADE_WIDGET_H
+#ifndef ABSTRACT_SHADE_WIDGET_H
+#define ABSTRACT_SHADE_WIDGET_H
 
 #include <QWidget>
 #include <QTimer>
